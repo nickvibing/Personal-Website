@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #ffffff;
+  padding: 5px 10px;
+  background: transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar ul li a:hover {
+  color: #00bfff; /* Light blue hover effect */
+  border-bottom: 2px solid #00bfff;
+}
+
+/* Content Area */
+.content {
+  margin-top: 100px; /* Adds space below the nav bar */
+  max-width: 600px;
+  opacity: 0; /* Hidden initially */
+  animation: slideDown 1s ease-out forwards; /* Slide-down animation */
+}
+
+.content h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.intro {
+  line-height: 1.8;
+  font-size: 1.2em;
+  margin-bottom: 50px; /* Adds spacing below About Me */
+}
+
+/* Books and Music Section */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Adds consistent spacing between sections */
+}
+
+.details p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.details strong {
+  color: #1e90ff; /* Highlighted text in light blue */
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
