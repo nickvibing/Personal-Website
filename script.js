@@ -13,18 +13,6 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-// Dynamic Greeting Based on Time of Day
-const hours = new Date().getHours();
-const intro = document.querySelector('.intro');
-if (intro) { // Ensure the element exists before modifying it
-  if (hours < 12) {
-    intro.textContent += " Good morning!";
-  } else if (hours < 18) {
-    intro.textContent += " Good afternoon!";
-  } else {
-    intro.textContent += " Good evening!";
-  }
-}
 
 // Add Slide-Down Animation on Page Load
 window.addEventListener('load', () => {
