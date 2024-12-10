@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    margin: 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ffffff;
+    padding: 5px 10px;
+    background: transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar ul li a:hover {
+    color: #00bfff; /* Light blue hover effect */
+    border-bottom: 2px solid #00bfff;
+  }
+  
+  /* Content Area */
+  .content {
+    margin-top: 120px; /* Adds space below the nav bar */
+    max-width: 800px; /* Wider content area */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px; /* Adds padding inside the content area */
+    background-color: #111111; /* Slightly lighter black for content */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    border: 1px solid #333; /* Subtle border for definition */
+  }
+  
+  /* Title Styling */
+  .content h1 {
+    font-size: 3.5em; /* Large title font */
+    font-weight: bold;
+    margin-bottom: 30px; /* Spacing below the title */
+    text-align: center; /* Center the title */
+    color: #ffffff; /* Light blue title */
+  }
+  
+  /* Intro Paragraph Styling */
+  .content p {
+    font-size: 1.4em; /* Larger font size for intro */
+    line-height: 1.8; /* Improve readability */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+    text-align: justify; /* Align text for a clean look */
+  }
+  
+  /* Essay Links List */
+  .content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px; /* Space above the list */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between list items */
+  }
+  
+  .content ul li a {
+    text-decoration: none;
+    font-size: 1.4em; /* Larger text for links */
+    color: #ffffff;
+    padding: 10px;
+    background-color: #222222; /* Dark background for links */
+    border-radius: 8px; /* Rounded corners for links */
+    transition: background-color 0.3s, text-shadow 0.3s;
+  }
+  
+  .content ul li a:hover {
+    background-color: #00bfff; /* Light blue background on hover */
+    color: #000000; /* Black text on hover */
+    text-shadow: 0 0 10px #00bfff; /* Glow effect */
+  }
+  
